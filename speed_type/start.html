@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="start.css">
+    <title>Speed Type</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            Скорость набора текста
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="main_title">
+                Вводите текст приведенный ниже.
+            </div>
+            <div class="random_text"></div>
+            <div class="input_text">
+                <textarea name="" id="myTextarea" cols="60" rows="7" autofocus oninput="startTimer()"></textarea>
+            </div>
+            <div id="timer"></div>
+            <button onclick="onTimerFinished()">Начать заново</button>
+            <div id="result"></div>
+        </div>
+    </main>
+    <script src="start.js"></script>
+</body>
+</html>
